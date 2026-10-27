@@ -1,6 +1,6 @@
 # BotVision
 
-- Last updated: 2026-10-27T07:29:25.609Z
+- Last updated: 2026-10-27T08:30:35.747Z
 - Repository: https://github.com/XBribo/CS2-Bot-Vision
 - Gamedata: [https://github.com/XBribo/CS2-Bot-Vision/blob/main/configs/addons/BotVision/gamedata.json](https://github.com/XBribo/CS2-Bot-Vision/blob/main/configs/addons/BotVision/gamedata.json)
 
