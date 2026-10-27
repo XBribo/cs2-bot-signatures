@@ -1,0 +1,88 @@
+name: Signature tracker
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17,47 * * * *'
+  push:
+    branches: [main]
+    paths-ignore:
+      - README.md
+      - .github/docs/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tracker-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Restore scan state
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            workdir/binaries
+            workdir/manifests
+            reports/latest.json
+          key: cs2-bot-inputs-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            cs2-bot-inputs-${{ runner.os }}-
+      - name: Install DepotDownloader
+        run: |
+          mkdir -p .tools
+          curl --fail --location --retry 3 https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.4.0/DepotDownloader-linux-x64.zip -o .tools/downloader.zip
+          unzip -q .tools/downloader.zip -d .tools
+          chmod +x .tools/DepotDownloader
+      - name: Scan signatures
+        id: check
+        continue-on-error: true
+        run: npm run check
+        env:
+          DEPOT_DOWNLOADER: ${{ github.workspace }}/.tools/DepotDownloader
+      - name: Write summary
+        if: always() && hashFiles('reports/README.md') != ''
+        run: cat README.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Save scan state
+        if: always() && steps.check.outputs.scanned == 'true'
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            workdir/binaries
+            workdir/manifests
+            reports/latest.json
+          key: cs2-bot-inputs-${{ runner.os }}-${{ steps.check.outputs.input_key }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Publish scan pages
+        if: always() && github.ref == 'refs/heads/main' && steps.check.outputs.input_key != ''
+        run: |
+          git add -- README.md .github/docs/
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              -c commit.gpgSign=false \
+              commit -m "chore: update signature reports"
+          git push origin HEAD:main
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: signature-report
+          path: |
+            README.md
+            .github/docs/
+            reports/
+          include-hidden-files: true
+          if-no-files-found: warn
+      - name: Fail on scan errors
+        if: always() && steps.check.outcome != 'success'
+        run: exit 1

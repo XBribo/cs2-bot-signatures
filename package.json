@@ -1,0 +1,10 @@
+{
+  "name": "cs2-bot-signatures",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node src/main.js"
+  }
+}

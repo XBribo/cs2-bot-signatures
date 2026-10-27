@@ -1,0 +1,6 @@
+[
+  { "platform": "windows", "library": "server", "depot": "2347771", "file": "game/csgo/bin/win64/server.dll" },
+  { "platform": "windows", "library": "engine2", "depot": "2347771", "file": "game/bin/win64/engine2.dll" },
+  { "platform": "linux", "library": "server", "depot": "2347773", "file": "game/csgo/bin/linuxsteamrt64/libserver.so" },
+  { "platform": "linux", "library": "engine2", "depot": "2347773", "file": "game/bin/linuxsteamrt64/libengine2.so" }
+]

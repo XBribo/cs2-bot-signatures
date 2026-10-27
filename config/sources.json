@@ -1,0 +1,20 @@
+[
+  {
+    "id": "BotHider",
+    "repo": "XBribo/CS2-Bot-Hider",
+    "branch": "main",
+    "path": "configs/addons/BotHider/gamedata.json"
+  },
+  {
+    "id": "BotController",
+    "repo": "XBribo/CS2-Bot-Controller",
+    "branch": "main",
+    "path": "configs/addons/BotController/gamedata.json"
+  },
+  {
+    "id": "BotVision",
+    "repo": "XBribo/CS2-Bot-Vision",
+    "branch": "main",
+    "path": "configs/addons/BotVision/gamedata.json"
+  }
+]

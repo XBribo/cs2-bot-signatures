@@ -1,0 +1,9 @@
+workdir/
+reports/
+node_modules/
+.tools/
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
