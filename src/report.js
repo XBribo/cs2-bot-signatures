@@ -110,7 +110,16 @@ export function markdownIndex(report, docsPath = '.github/docs') {
 
 export function markdownProject(report, project) {
   const url = `https://github.com/${project.repo}/blob/${encodeURIComponent(project.branch)}/${project.path.split('/').map(encodeURIComponent).join('/')}`;
-  const lines = [`# ${cell(project.id)}`, '', `- Last updated: ${report.generated_at}`, `- Repository: https://github.com/${project.repo}`, `- Gamedata: [${url}](${url})`];
+  const lines = [`# ${cell(project.id)}`, '', `- Last updated: ${report.generated_at}`, `- Repository: https://github.com/${project.repo}`];
+  if (project.type === 'csharp') {
+    lines.push('', '## Sources', '');
+    for (const file of project.files ?? []) {
+      const source = `https://github.com/${file.repo}/blob/${encodeURIComponent(file.branch)}/${file.path.split('/').map(encodeURIComponent).join('/')}`;
+      lines.push(`- [${cell(file.path)}](${source})`);
+    }
+  } else {
+    lines.push(`- Gamedata: [${url}](${url})`);
+  }
   const errors = [...new Set([project.error, ...project.signatures.map(row => row.error)].filter(Boolean))];
   if (errors.length) lines.push('', '## Scan errors', '', ...errors.map(error => `- ${cell(error)}`));
   if (project.signatures.length) lines.push('', '## Signatures');

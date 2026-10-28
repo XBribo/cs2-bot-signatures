@@ -16,5 +16,40 @@
     "repo": "XBribo/CS2-Bot-Vision",
     "branch": "main",
     "path": "configs/addons/BotVision/gamedata.json"
+  },
+  {
+    "id": "BotAI",
+    "type": "csharp",
+    "repo": "ed0ard/CS2-BotAI",
+    "branch": "main",
+    "path": "WindowsPatchDefinitions.cs"
+  },
+  {
+    "id": "BotState",
+    "type": "csharp",
+    "repo": "ed0ard/CS2-Smarter-Bot",
+    "branch": "main",
+    "path": "BotFovSignatures.cs"
+  },
+  {
+    "id": "BotAimImprover",
+    "type": "csharp",
+    "repo": "ed0ard/CS2-Bullseye-Bot",
+    "branch": "main",
+    "path": "BotAimImprover.cs"
+  },
+  {
+    "id": "BotRandomizer",
+    "type": "csharp",
+    "repo": "ed0ard/CS2-Bot-Randomizer",
+    "branch": "main",
+    "path": "BotRandomizer.cs"
+  },
+  {
+    "id": "NadeSystem",
+    "type": "csharp",
+    "repo": "ed0ard/CS2-Bot-NadeSystem",
+    "branch": "main",
+    "path": "NadeSystem.cs"
   }
 ]

@@ -22,7 +22,16 @@ async function writeReport(root, report) {
   await writeJson(join(reportdir, 'latest.json'), report);
   await atomicWrite(join(reportdir, 'README.md'), markdownIndex(report, '../.github/docs'));
   await atomicWrite(join(root, 'README.md'), markdownIndex(report));
-  await atomicWrite(join(root, '.github', 'docs', 'summary.svg'), svgOverview(report));
+  const overviews = [
+    ['summary', report.projects.filter(project => project.type !== 'csharp')],
+    ['BotImprover', report.projects.filter(project => project.type === 'csharp')],
+  ];
+  for (const [name, projects] of overviews) {
+    if (!projects.length) continue;
+    const statuses = projects.map(project => project.status);
+    const status = ['ERROR', 'FAIL', 'PARTIAL'].find(value => statuses.includes(value)) ?? 'PASS';
+    await atomicWrite(join(root, '.github', 'docs', `${name}.svg`), svgOverview({ ...report, projects, status }));
+  }
   for (const project of report.projects) {
     await atomicWrite(join(root, '.github', 'docs', `${project.id}.md`), markdownProject(report, project));
   }

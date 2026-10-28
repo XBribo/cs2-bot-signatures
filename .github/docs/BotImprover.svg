@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="494" viewBox="0 0 900 494" role="img" aria-labelledby="title description">
+<title id="title">CS2 Bot Signatures Tracker</title>
+<desc id="description">Last updated: 2026-10-28T08:14:51.670Z. Scan: steam; PASS. BotAI: Linux ✅, Windows ✅. BotState: Linux ✅, Windows ✅. BotAimImprover: Linux ✅, Windows ✅. BotRandomizer: Linux ✅, Windows ✅. NadeSystem: Linux ✅, Windows ✅. Counts: unique / total signatures.</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:14px;fill:#1f2328}.meta{font-size:13px;fill:#59636e}.heading{font-weight:600}.link{fill:#0969da}</style>
+<rect width="900" height="494" fill="#ffffff"/>
+<text x="24" y="43" style="font-size:26px;font-weight:600">CS2 Bot Signatures Tracker</text>
+<path d="M24 59H876" stroke="#d1d9e0"/>
+<text class="meta" x="24" y="85">Last updated: 2026-10-28T08:14:51.670Z</text>
+<text class="meta" x="24" y="110">Scan: steam; PASS</text>
+<text class="meta" x="24" y="135">Manifests: 2347771: 5751660862748360256, 2347773: 5491505037461703699</text>
+<rect x="24" y="168" width="852" height="42" fill="#f6f8fa"/>
+<text class="heading" x="44" y="194">Linux</text>
+<text class="heading" x="204" y="194">Windows</text>
+<text class="heading" x="364" y="194">Project</text>
+<text class="heading" x="674" y="194">Signatures</text>
+<g transform="translate(44 225)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="74" y="240">40 / 40</text>
+<g transform="translate(204 225)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="234" y="240">40 / 40</text>
+<text class="link" x="364" y="240">BotAI</text>
+<text class="link" x="674" y="240">View signatures</text>
+<rect x="24" y="258" width="852" height="48" fill="#f6f8fa"/>
+<g transform="translate(44 273)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="74" y="288">6 / 6</text>
+<g transform="translate(204 273)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="234" y="288">6 / 6</text>
+<text class="link" x="364" y="288">BotState</text>
+<text class="link" x="674" y="288">View signatures</text>
+<g transform="translate(44 321)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="74" y="336">1 / 1</text>
+<g transform="translate(204 321)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="234" y="336">1 / 1</text>
+<text class="link" x="364" y="336">BotAimImprover</text>
+<text class="link" x="674" y="336">View signatures</text>
+<rect x="24" y="354" width="852" height="48" fill="#f6f8fa"/>
+<g transform="translate(44 369)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="74" y="384">3 / 3</text>
+<g transform="translate(204 369)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="234" y="384">3 / 3</text>
+<text class="link" x="364" y="384">BotRandomizer</text>
+<text class="link" x="674" y="384">View signatures</text>
+<g transform="translate(44 417)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="74" y="432">3 / 3</text>
+<g transform="translate(204 417)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="234" y="432">3 / 3</text>
+<text class="link" x="364" y="432">NadeSystem</text>
+<text class="link" x="674" y="432">View signatures</text>
+<path d="M24 168H876V450H24ZM24 210H876M184 168V450M344 168V450M654 168V450" fill="none" stroke="#d1d9e0"/>
+<text class="meta" x="24" y="477">Counts: unique / total signatures</text>
+</svg>

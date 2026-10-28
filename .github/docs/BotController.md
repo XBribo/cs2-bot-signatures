@@ -1,6 +1,6 @@
 # BotController
 
-- Last updated: 2026-10-27T08:30:35.747Z
+- Last updated: 2026-10-28T08:14:51.670Z
 - Repository: https://github.com/XBribo/CS2-Bot-Controller
 - Gamedata: [https://github.com/XBribo/CS2-Bot-Controller/blob/main/configs/addons/BotController/gamedata.json](https://github.com/XBribo/CS2-Bot-Controller/blob/main/configs/addons/BotController/gamedata.json)
 
