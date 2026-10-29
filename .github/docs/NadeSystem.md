@@ -1,6 +1,6 @@
 # NadeSystem
 
-- Last updated: 2026-10-28T09:05:30.219Z
+- Last updated: 2026-10-29T00:55:22.363Z
 - Repository: https://github.com/ed0ard/CS2-Bot-NadeSystem
 
 ## Sources

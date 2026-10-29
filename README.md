@@ -1,8 +1,8 @@
 # CS2 Bot Signatures Tracker
 
-- Last updated: 2026-10-28T09:05:30.219Z
+- Last updated: 2026-10-29T00:55:22.363Z
 - Scan: steam; PASS
-- Manifests: 2347771: 5751660862748360256, 2347773: 5491505037461703699
+- Manifests: 2347771: 5218696177408015009, 2347773: 3474977783625240452
 
 | Linux | Windows | Project | Signatures |
 |---|---|---|---|
