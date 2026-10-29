@@ -6,7 +6,7 @@ import { prepareBinaries, validateBinaries } from './binaries.js';
 import { PLATFORMS } from './gamedata.js';
 import { scanFile } from './scan.js';
 import { atomicWrite, readCache, sha256, writeJson } from './io.js';
-import { markdownIndex, markdownProject, svgOverview, svgSignatures } from './report.js';
+import { markdownIndex, markdownProject, svgOverview } from './report.js';
 
 export const PROJECT_ROOT = fileURLToPath(new URL('../', import.meta.url));
 
@@ -20,18 +20,14 @@ function projectStatus(project) {
 async function writeReport(root, report) {
   const reportdir = join(root, 'reports');
   await writeJson(join(reportdir, 'latest.json'), report);
-  await atomicWrite(join(reportdir, 'README.md'), markdownIndex(report, '../.github/docs'));
+  await atomicWrite(join(reportdir, 'README.md'), markdownIndex(report));
   await atomicWrite(join(root, 'README.md'), markdownIndex(report));
-  await atomicWrite(join(root, '.github', 'docs', 'all-signatures.svg'), svgSignatures(report));
-  const overviews = [
-    ['summary', report.projects.filter(project => project.type !== 'csharp')],
-    ['BotImprover', report.projects.filter(project => project.type === 'csharp')],
-  ];
-  for (const [name, projects] of overviews) {
-    if (!projects.length) continue;
+  await atomicWrite(join(root, '.github', 'docs', 'BotImprover.svg'), svgOverview(report));
+  const projects = report.projects.filter(project => project.type !== 'csharp');
+  if (projects.length) {
     const statuses = projects.map(project => project.status);
     const status = ['ERROR', 'FAIL', 'PARTIAL'].find(value => statuses.includes(value)) ?? 'PASS';
-    await atomicWrite(join(root, '.github', 'docs', `${name}.svg`), svgOverview({ ...report, projects, status }));
+    await atomicWrite(join(root, '.github', 'docs', 'summary.svg'), svgOverview({ ...report, projects, status }));
   }
   for (const project of report.projects) {
     await atomicWrite(join(root, '.github', 'docs', `${project.id}.md`), markdownProject(report, project));
