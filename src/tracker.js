@@ -6,7 +6,7 @@ import { prepareBinaries, validateBinaries } from './binaries.js';
 import { PLATFORMS } from './gamedata.js';
 import { scanFile } from './scan.js';
 import { atomicWrite, readCache, sha256, writeJson } from './io.js';
-import { markdownIndex, markdownProject, svgOverview } from './report.js';
+import { markdownIndex, markdownProject, svgOverview, svgSignatures } from './report.js';
 
 export const PROJECT_ROOT = fileURLToPath(new URL('../', import.meta.url));
 
@@ -22,6 +22,7 @@ async function writeReport(root, report) {
   await writeJson(join(reportdir, 'latest.json'), report);
   await atomicWrite(join(reportdir, 'README.md'), markdownIndex(report, '../.github/docs'));
   await atomicWrite(join(root, 'README.md'), markdownIndex(report));
+  await atomicWrite(join(root, '.github', 'docs', 'all-signatures.svg'), svgSignatures(report));
   const overviews = [
     ['summary', report.projects.filter(project => project.type !== 'csharp')],
     ['BotImprover', report.projects.filter(project => project.type === 'csharp')],

@@ -1,0 +1,351 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="3788" viewBox="0 0 900 3788" role="img" aria-labelledby="title description">
+<title id="title">CS2 Bot Signatures: All Signatures</title>
+<desc id="description">Windows and Linux signature status by project. Last updated: 2026-10-28T08:14:51.670Z.</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:14px;fill:#1f2328}.meta{font-size:13px;fill:#59636e}.heading{font-weight:600}.function{font-family:Consolas,"Liberation Mono",monospace;font-size:13px}</style>
+<rect width="900" height="3788" fill="#ffffff"/>
+<text x="24" y="43" style="font-size:26px;font-weight:600">CS2 Bot Signatures: All Signatures</text>
+<path d="M24 59H876" stroke="#d1d9e0"/>
+<text class="meta" x="24" y="85">Last updated: 2026-10-28T08:14:51.670Z</text>
+<text class="meta" x="24" y="110">Scan: steam; PASS</text>
+<text class="meta" x="24" y="135">Manifests: 2347771: 5751660862748360256, 2347773: 5491505037461703699</text>
+<g transform="translate(24 151)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g><text class="meta" x="50" y="165">Unique</text>
+<g transform="translate(190 151)"><circle cx="9" cy="9" r="9" fill="#cf222e"/><path d="m6 6 6 6m0-6-6 6" stroke="white" stroke-width="2"/></g><text class="meta" x="216" y="165">Missing</text>
+<g transform="translate(350 151)"><path d="M9 0 19 18H-1Z" fill="#9a6700"/><path d="M9 5v6m0 2v2" stroke="white" stroke-width="2"/></g><text class="meta" x="376" y="165">Multiple matches (n)</text>
+<text class="meta" x="660" y="165">- Not provided</text>
+<text class="heading" x="24" y="213" style="font-size:18px">BotHider</text>
+<rect x="24" y="226" width="852" height="32" fill="#f6f8fa"/>
+<text class="heading" x="44" y="247">Linux</text>
+<text class="heading" x="184" y="247">Windows</text>
+<text class="heading" x="324" y="247">Function</text>
+<g transform="translate(44 266)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 266)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="279">UTIL_Remove</text>
+<rect x="24" y="292" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 300)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 300)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="313">CCSBotManager::MaintainBotQuota</text>
+<g transform="translate(44 334)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 334)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="347">CBaseIssue::CountPotentialVoters</text>
+<rect x="24" y="360" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 368)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 368)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="381">CCSPlayerController::HandleCommand_JoinTeam</text>
+<g transform="translate(44 402)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 402)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="415">MpHumanTeam_ApplyRestriction</text>
+<rect x="24" y="428" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 436)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 436)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="449">CNetworkGameServer::PackEntities</text>
+<g transform="translate(44 470)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 470)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="483">CCSGameRules::EndMatchState</text>
+<rect x="24" y="496" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 504)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 504)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="517">CSPlayerController::ScriptIsBot</text>
+<path d="M24 226H876V530H24ZM24 258H876M164 226V530M304 226V530" fill="none" stroke="#d1d9e0"/>
+<text class="heading" x="24" y="581" style="font-size:18px">BotController</text>
+<rect x="24" y="594" width="852" height="32" fill="#f6f8fa"/>
+<text class="heading" x="44" y="615">Linux</text>
+<text class="heading" x="184" y="615">Windows</text>
+<text class="heading" x="324" y="615">Function</text>
+<g transform="translate(44 634)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 634)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="647">CCSBot::EquipBestWeapon</text>
+<rect x="24" y="660" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 668)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 668)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="681">CCSBot::EquipPistol</text>
+<g transform="translate(44 702)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 702)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="715">CCSPlayer_WeaponServices::SelectItem</text>
+<rect x="24" y="728" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 736)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 736)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="749">CCSPlayer_WeaponServices::GetSlot</text>
+<g transform="translate(44 770)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 770)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="783">CCSBot::Update</text>
+<rect x="24" y="796" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 804)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 804)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="817">CCSBot::Upkeep</text>
+<g transform="translate(44 838)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 838)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="851">BuyState::OnUpdate</text>
+<rect x="24" y="864" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 872)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 872)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="885">CCSBot::UpdateLookAngles</text>
+<g transform="translate(44 906)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 906)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="919">CCSPlayerPawn::SetEyeAngles</text>
+<rect x="24" y="932" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 940)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 940)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="953">CCSPlayer_MovementServices::ProcessMovement</text>
+<g transform="translate(44 974)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 974)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="987">CBasePlayerController::OnSimulateUserCommands</text>
+<rect x="24" y="1000" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1008)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1008)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1021">DropReleasePose::OuterDrop</text>
+<g transform="translate(44 1042)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1042)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1055">DropReleasePose::BuildTransform</text>
+<path d="M24 594H876V1068H24ZM24 626H876M164 594V1068M304 594V1068" fill="none" stroke="#d1d9e0"/>
+<text class="heading" x="24" y="1119" style="font-size:18px">BotVision</text>
+<rect x="24" y="1132" width="852" height="32" fill="#f6f8fa"/>
+<text class="heading" x="44" y="1153">Linux</text>
+<text class="heading" x="184" y="1153">Windows</text>
+<text class="heading" x="324" y="1153">Function</text>
+<g transform="translate(44 1172)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1172)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1185">CBotManager::IsVisibleThroughSmoke</text>
+<rect x="24" y="1198" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1206)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1206)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1219">g_AutoList_SmokeProj_Head_Server</text>
+<g transform="translate(44 1240)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1240)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1253">GetSmokeDensityInLine</text>
+<rect x="24" y="1266" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1274)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1274)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1287">CHEGrenadeProjectile::Detonate</text>
+<g transform="translate(44 1308)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1308)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1321">BulletPelletTrace</text>
+<rect x="24" y="1334" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1342)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1342)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1355">BulletPelletTraceResult</text>
+<g transform="translate(44 1376)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1376)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1389">CCSPlayer_WeaponServices::GetSlot</text>
+<rect x="24" y="1402" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1410)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1410)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1423">CCSBot::IsVisiblePos</text>
+<g transform="translate(44 1444)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1444)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1457">CCSBot::IsVisiblePlayer</text>
+<path d="M24 1132H876V1470H24ZM24 1164H876M164 1132V1470M304 1132V1470" fill="none" stroke="#d1d9e0"/>
+<text class="heading" x="24" y="1521" style="font-size:18px">BotAI</text>
+<rect x="24" y="1534" width="852" height="32" fill="#f6f8fa"/>
+<text class="heading" x="44" y="1555">Linux</text>
+<text class="heading" x="184" y="1555">Windows</text>
+<text class="heading" x="324" y="1555">Function</text>
+<g transform="translate(44 1574)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1574)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1587">BotAI.HasVisitedEnemySpawn</text>
+<rect x="24" y="1600" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1608)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1608)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1621">BotAI.GameState_Reset</text>
+<g transform="translate(44 1642)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1642)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1655">BotAI.Idle_IsSafeAlwaysFalse</text>
+<rect x="24" y="1668" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1676)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1676)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1689">BotAI.EscapeFromBomb_OnEnter_NoEquipKnife</text>
+<g transform="translate(44 1710)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1710)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1723">BotAI.EscapeFromBomb_OnUpdate_NoEquipKnife</text>
+<rect x="24" y="1736" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1744)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1744)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1757">BotAI.EscapeFromFlames_OnEnter_NoEquipKnife</text>
+<g transform="translate(44 1778)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1778)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1791">BotAI.PlantBombLookAtPriorityLow</text>
+<rect x="24" y="1804" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1812)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1812)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1825">BotAI.DefuseBombLookAtPriorityLow</text>
+<g transform="translate(44 1846)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1846)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1859">BotAI.DefuseBomb_SkipIsVisibleCheck</text>
+<rect x="24" y="1872" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1880)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1880)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1893">BotAI.AttackState_SkipFireRateCheck</text>
+<g transform="translate(44 1914)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1914)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1927">BotAI.SprayAllDistances_ForceHoldTrigger</text>
+<rect x="24" y="1940" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 1948)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1948)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1961">BotAI.AttackState_SkipSteadyFireShortcut</text>
+<g transform="translate(44 1982)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 1982)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="1995">BotAI.AttackState_SkipZoomFireShortcut</text>
+<rect x="24" y="2008" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2016)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2016)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2029">BotAI.AttackState_SkipSniperSpreadCheck</text>
+<g transform="translate(44 2050)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2050)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2063">BotAI.AttackState_DodgeDuringReload</text>
+<rect x="24" y="2076" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2084)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2084)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2097">BotAI.SniperCrouchDodge_jb</text>
+<g transform="translate(44 2118)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2118)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2131">BotAI.LowSKill_JumpChance0</text>
+<rect x="24" y="2144" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2152)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2152)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2165">BotAI.AttackState_DodgeChance100_Always</text>
+<g transform="translate(44 2186)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2186)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2199">BotAI.AttackState_RetreatOnSniper_Disable</text>
+<rect x="24" y="2212" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2220)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2220)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2233">BotAI.AllSkill_KeepMoving_WhenSeeSniper</text>
+<g transform="translate(44 2254)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2254)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2267">BotAI.AttackState_CanStrafe_jne</text>
+<rect x="24" y="2280" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2288)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2288)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2301">BotAI.SniperDodge_SkipIsSniper_DodgeA</text>
+<g transform="translate(44 2322)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2322)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2335">BotAI.Vision_AlwaysWatchApproachPoints</text>
+<rect x="24" y="2348" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2356)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2356)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2369">BotAI.Vision_ApproachBody_SkipSkillCheck</text>
+<g transform="translate(44 2390)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2390)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2403">BotAI.Vision_ApproachBody_SkipHidingSpotCheck</text>
+<rect x="24" y="2416" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2424)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2424)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2437">BotAI.Vision_SkipIsMovingGate</text>
+<g transform="translate(44 2458)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2458)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2471">BotAI.Vision_AlwaysEnterApproachBody</text>
+<rect x="24" y="2484" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2492)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2492)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2505">BotAI.IsNoticable_AlwaysTrue</text>
+<g transform="translate(44 2526)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2526)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2539">BotAI.Upkeep_BotCOS_ZeroDrift</text>
+<rect x="24" y="2552" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2560)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2560)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2573">BotAI.Upkeep_BotSIN_ZeroDrift</text>
+<g transform="translate(44 2594)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2594)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2607">BotAI.InvestigateNoise_SkipSelfDefenseCheck</text>
+<rect x="24" y="2620" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2628)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2628)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2641">BotAI.TBot_BombsiteSearch_UseKnownPlantedSite</text>
+<g transform="translate(44 2662)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2662)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2675">BotAI.BombBeep_CT_GlobalHearRange</text>
+<rect x="24" y="2688" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2696)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2696)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2709">BotAI.BombPickup_CT_GlobalHearRange</text>
+<g transform="translate(44 2730)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2730)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2743">BotAI.OnAudibleEvent_GlobalHearRange</text>
+<rect x="24" y="2756" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2764)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2764)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2777">BotAI.OnBombPlanted_AllBotsLearnSite</text>
+<g transform="translate(44 2798)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2798)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2811">BotAI.CT_Defuse_EngageAndInvestigate</text>
+<rect x="24" y="2824" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2832)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2832)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2845">BotAI.DefuseBombState_OnUpdate_EngageAndInvestigate</text>
+<g transform="translate(44 2866)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2866)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2879">BotAI.DefuseBombState_OnEnter_EngageAndInvestigate</text>
+<rect x="24" y="2892" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 2900)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 2900)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="2913">BotAI.FlashbangAvoidance_Disable</text>
+<path d="M24 1534H876V2926H24ZM24 1566H876M164 1534V2926M304 1534V2926" fill="none" stroke="#d1d9e0"/>
+<text class="heading" x="24" y="2977" style="font-size:18px">BotState</text>
+<rect x="24" y="2990" width="852" height="32" fill="#f6f8fa"/>
+<text class="heading" x="44" y="3011">Linux</text>
+<text class="heading" x="184" y="3011">Windows</text>
+<text class="heading" x="324" y="3011">Function</text>
+<g transform="translate(44 3030)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3030)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3043">BotState.FOV.Player</text>
+<rect x="24" y="3056" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 3064)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3064)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3077">BotState.FOV.Position</text>
+<g transform="translate(44 3098)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3098)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3111">BotState.DefuseBomb</text>
+<rect x="24" y="3124" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 3132)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3132)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3145">BotState.BotBlind</text>
+<g transform="translate(44 3166)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3166)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3179">BotState.IsVisiblePos_IgnoreFOV</text>
+<rect x="24" y="3192" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 3200)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3200)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3213">BotState.IsVisiblePlayer_IgnoreFOV</text>
+<path d="M24 2990H876V3226H24ZM24 3022H876M164 2990V3226M304 2990V3226" fill="none" stroke="#d1d9e0"/>
+<text class="heading" x="24" y="3277" style="font-size:18px">BotAimImprover</text>
+<rect x="24" y="3290" width="852" height="32" fill="#f6f8fa"/>
+<text class="heading" x="44" y="3311">Linux</text>
+<text class="heading" x="184" y="3311">Windows</text>
+<text class="heading" x="324" y="3311">Function</text>
+<g transform="translate(44 3330)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3330)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3343">BotAimImprover.PickNewAimSpot</text>
+<path d="M24 3290H876V3356H24ZM24 3322H876M164 3290V3356M304 3290V3356" fill="none" stroke="#d1d9e0"/>
+<text class="heading" x="24" y="3407" style="font-size:18px">BotRandomizer</text>
+<rect x="24" y="3420" width="852" height="32" fill="#f6f8fa"/>
+<text class="heading" x="44" y="3441">Linux</text>
+<text class="heading" x="184" y="3441">Windows</text>
+<text class="heading" x="324" y="3441">Function</text>
+<g transform="translate(44 3460)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3460)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3473">BotRandomizer.SetOrAddAttributeValueByName</text>
+<rect x="24" y="3486" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 3494)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3494)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3507">BotRandomizer.CEconItemViewConstructor</text>
+<g transform="translate(44 3528)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3528)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3541">BotRandomizer.CEconItemViewDestructor</text>
+<path d="M24 3420H876V3554H24ZM24 3452H876M164 3420V3554M304 3420V3554" fill="none" stroke="#d1d9e0"/>
+<text class="heading" x="24" y="3605" style="font-size:18px">NadeSystem</text>
+<rect x="24" y="3618" width="852" height="32" fill="#f6f8fa"/>
+<text class="heading" x="44" y="3639">Linux</text>
+<text class="heading" x="184" y="3639">Windows</text>
+<text class="heading" x="324" y="3639">Function</text>
+<g transform="translate(44 3658)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3658)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3671">NadeSystem.smokeCreate</text>
+<rect x="24" y="3684" width="852" height="34" fill="#f6f8fa"/>
+<g transform="translate(44 3692)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3692)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3705">NadeSystem.heCreate</text>
+<g transform="translate(44 3726)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<g transform="translate(184 3726)"><title>✅</title><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text class="function" x="324" y="3739">NadeSystem.molotovCreate</text>
+<path d="M24 3618H876V3752H24ZM24 3650H876M164 3618V3752M304 3618V3752" fill="none" stroke="#d1d9e0"/>
+</svg>
