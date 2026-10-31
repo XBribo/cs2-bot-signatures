@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="373" viewBox="0 0 900 373" role="img" aria-labelledby="title description">
 <title id="title">CS2 Bot Signatures Tracker</title>
-<desc id="description">Last updated: October 29, 2026 at 12:55:22 AM GMT. BotHider: Linux ✅, Windows ✅. BotController: Linux ✅, Windows ✅. BotVision: Linux ✅, Windows ✅. Counts: unique / total signatures.</desc>
+<desc id="description">Last updated: October 31, 2026 at 1:04:01 AM GMT. BotHider: Linux ✅, Windows ✅. BotController: Linux ✅, Windows ✅. BotVision: Linux ✅, Windows ✅. Counts: unique / total signatures.</desc>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:14px;fill:#1f2328}.meta{font-size:13px;fill:#59636e}.heading{font-weight:600}.link{fill:#0969da}</style>
 <rect width="900" height="373" fill="#ffffff"/>
 <text x="24" y="43" style="font-size:26px;font-weight:600">CS2 Bot Signatures Tracker</text>
 <path d="M24 59H876" stroke="#d1d9e0"/>
-<text class="meta" x="24" y="85"><tspan font-weight="700">Last updated:</tspan> October 29, 2026 at 12:55:22 AM GMT</text>
-<text class="meta" x="24" y="110"><tspan font-weight="700">Manifests:</tspan> <a href="https://steamdb.info/depot/2347771/history/?changeid=M:5218696177408015009"><tspan class="link">5218696177408015009</tspan></a>, <a href="https://steamdb.info/depot/2347773/history/?changeid=M:3474977783625240452"><tspan class="link">3474977783625240452</tspan></a></text>
+<text class="meta" x="24" y="85"><tspan font-weight="700">Last updated:</tspan> October 31, 2026 at 1:04:01 AM GMT</text>
+<text class="meta" x="24" y="110"><tspan font-weight="700">Manifests:</tspan> <a href="https://steamdb.info/depot/2347771/history/?changeid=M:4494425425081083634"><tspan class="link">4494425425081083634</tspan></a>, <a href="https://steamdb.info/depot/2347773/history/?changeid=M:6232960523750647649"><tspan class="link">6232960523750647649</tspan></a></text>
 <rect x="24" y="143" width="852" height="42" fill="#f6f8fa"/>
 <text class="heading" x="44" y="169">Linux</text>
 <text class="heading" x="204" y="169">Windows</text>
