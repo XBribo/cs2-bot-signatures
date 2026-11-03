@@ -1,6 +1,6 @@
 # BotHider
 
-- **Last updated:** October 31, 2026 at 1:04:01 AM GMT
+- **Last updated:** November 3, 2026 at 2:39:08 AM GMT
 - Repository: https://github.com/XBribo/CS2-Bot-Hider
 - Gamedata: [https://github.com/XBribo/CS2-Bot-Hider/blob/main/configs/addons/BotHider/gamedata.json](https://github.com/XBribo/CS2-Bot-Hider/blob/main/configs/addons/BotHider/gamedata.json)
 

@@ -1,7 +1,7 @@
 # CS2 Bot Signatures Tracker
 
-* **Last updated:** October 31, 2026 at 1:04:01 AM GMT
-* **Manifests:** [4494425425081083634](https://steamdb.info/depot/2347771/history/?changeid=M:4494425425081083634), [6232960523750647649](https://steamdb.info/depot/2347773/history/?changeid=M:6232960523750647649)
+* **Last updated:** November 3, 2026 at 2:39:08 AM GMT
+* **Manifests:** [5808144614069275570](https://steamdb.info/depot/2347771/history/?changeid=M:5808144614069275570), [4551386601247986792](https://steamdb.info/depot/2347773/history/?changeid=M:4551386601247986792)
 
 <table>
 <tr><th>Linux</th><th>Windows</th><th>Project</th><th></th></tr>
