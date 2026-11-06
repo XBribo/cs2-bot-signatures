@@ -5,7 +5,7 @@ function cell(value) {
 function platformSummary(project, platform) {
   if (project.error) return '⚠️';
   const rows = project.signatures.filter(row => row.platform === platform);
-  if (rows.some(row => row.status === 'MISSING')) return '❌';
+  if (rows.some(row => ['MISSING', 'PATCH_INVALID'].includes(row.status))) return '❌';
   return rows.length && rows.every(row => row.status === 'UNIQUE') ? '✅' : '⚠️';
 }
 
@@ -76,6 +76,7 @@ function signatureStatus(row) {
   if (!row || row.status === 'UNSUPPORTED') return '-';
   if (row.status === 'UNIQUE') return '✅';
   if (row.status === 'MISSING') return '❌';
+  if (row.status === 'PATCH_INVALID') return '❌ patch';
   if (row.status === 'AMBIGUOUS') return `⚠️(${row.match_count ?? `≥${row.matches.length}`})`;
   return `⚠️ ${row.status}`;
 }
@@ -104,7 +105,7 @@ export function markdownIndex(report) {
   }
   lines.push('</table>');
   for (const project of report.projects) {
-    const broken = signatureGroups(project).filter(group => [group.linux, group.windows].some(row => ['MISSING', 'AMBIGUOUS'].includes(row?.status)));
+    const broken = signatureGroups(project).filter(group => [group.linux, group.windows].some(row => ['MISSING', 'AMBIGUOUS', 'PATCH_INVALID'].includes(row?.status)));
     if (!broken.length) continue;
     lines.push('', '<details>', `<summary>${xml(project.id)} broken signatures</summary>`, '', '<table>', '<tr><th>Linux</th><th>Windows</th><th>Function</th></tr>');
     for (const group of broken) lines.push(`<tr><td>${xml(signatureStatus(group.linux))}</td><td>${xml(signatureStatus(group.windows))}</td><td>${xml(group.name)}</td></tr>`);
@@ -140,6 +141,15 @@ export function markdownProject(report, project) {
       const row = group[platform];
       if (!row) continue;
       lines.push(`| ${signatureStatus(row)} | ${platform === 'linux' ? 'Linux' : 'Windows'} | ${cell(row.library)} | ${row.pattern ? `\`${cell(row.pattern)}\`` : '-'} |`);
+    }
+    const patches = [group.linux, group.windows].filter(row => row?.patch);
+    if (patches.length) {
+      lines.push('', '| Platform | patchOffset | expectedOriginal | Patch bytes | Actual bytes | Patch check |', '|---|---|---|---|---|---|');
+      for (const row of patches) {
+        const check = row.patch_check;
+        const status = check ? `${check.status}${check.reason ? `: ${check.reason}` : ''}` : 'NOT_CHECKED';
+        lines.push(`| ${row.platform === 'linux' ? 'Linux' : 'Windows'} | ${cell(row.patch.offset)} | \`${cell(row.patch.expectedOriginal)}\` | \`${cell(row.patch.bytes)}\` | ${check?.actual ? `\`${cell(check.actual)}\`` : '-'} | ${cell(status)} |`);
+      }
     }
   }
   lines.push('');

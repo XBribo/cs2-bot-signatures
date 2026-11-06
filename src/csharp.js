@@ -16,14 +16,14 @@ const FILES = [
 ];
 const LITERAL = '@?"([^"\\\\]*)"';
 
-// Handle the known upstream layouts without executing C# or reading patch bytes.
+// Handle the known upstream layouts without executing C#.
 export function parseCsharp(file, text) {
   const code = text.replace(/@"(?:""|[^"])*"|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])'|\/\/[^\r\n]*|\/\*[\s\S]*?\*\//g,
     token => token.startsWith('//') || token.startsWith('/*') ? ' ' : token);
   const rows = [];
-  const add = (name, platform, pattern) => {
+  const add = (name, platform, pattern, patch) => {
     parsePattern(pattern);
-    rows.push({ name: `${file.plugin}.${name}`, platform, pattern: pattern.trim().replace(/\s+/g, ' ') });
+    rows.push({ name: `${file.plugin}.${name}`, platform, pattern: pattern.trim().replace(/\s+/g, ' '), ...(patch && { patch }) });
   };
   const literal = expression => {
     const match = expression.trim().match(new RegExp(`^${LITERAL}$`));
@@ -35,9 +35,11 @@ export function parseCsharp(file, text) {
   };
   if (file.kind === 'patches') {
     const entries = [...code.matchAll(/\[\s*"([^"]+)"\s*\]\s*=\s*\(/g)];
-    const matches = [...code.matchAll(new RegExp(`\\[\\s*"([^"]+)"\\s*\\]\\s*=\\s*\\(\\s*signature\\s*:\\s*${LITERAL}\\s*,`, 'g'))];
+    const matches = [...code.matchAll(new RegExp(`\\[\\s*"([^"]+)"\\s*\\]\\s*=\\s*\\(\\s*signature\\s*:\\s*${LITERAL}\\s*,\\s*patch\\s*:\\s*${LITERAL}\\s*,\\s*expectedOriginal\\s*:\\s*${LITERAL}\\s*,\\s*patchOffset\\s*:\\s*(-?\\d+)\\s*\\)`, 'g'))];
     complete(entries.length, matches.length);
-    for (const [, name, pattern] of matches) add(name, file.platform, pattern);
+    for (const [, name, pattern, bytes, expectedOriginal, offset] of matches) {
+      add(name, file.platform, pattern, { bytes, expectedOriginal, offset: Number(offset) });
+    }
   } else if (file.kind === 'constants') {
     for (const [, symbol, expression] of code.matchAll(/\bconst\s+string\s+(\w*(?:Windows|Linux)\w*)\s*=\s*([^;]+);/g)) {
       const platform = symbol.includes('Windows') ? 'windows' : 'linux';
@@ -102,6 +104,10 @@ export async function fetchCsharp(source, firstText, workdir, options) {
       const entry = signatures.get(row.name);
       if (entry.patterns[row.platform]) throw new Error(`${row.name}/${row.platform}: duplicate signature`);
       entry.patterns[row.platform] = row.pattern;
+      if (row.patch) {
+        entry.patches ??= {};
+        entry.patches[row.platform] = row.patch;
+      }
     }
     await atomicWrite(join(workdir, 'upstream', source.id, file.path), text);
     files.push({ repo: source.repo, branch: source.branch, path: file.path, url, sha256: sha256(text) });

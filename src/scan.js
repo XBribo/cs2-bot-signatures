@@ -124,13 +124,38 @@ export function findMatches(buffer, ranges, pattern) {
   return matches;
 }
 
+function checkPatch(buffer, ranges, match, patch) {
+  const result = { status: 'FAIL' };
+  try {
+    const expected = parsePattern(patch.expectedOriginal);
+    if (patch.bytes.trim().split(/\s+/).length !== expected.bytes.length) throw new Error('Patch length differs from expectedOriginal length');
+    const start = Number(match.file_offset);
+    const offset = start + patch.offset;
+    const range = ranges.find(range => start >= range.offset && start < range.offset + range.size);
+    if (offset < range.offset || offset > range.offset + range.size - expected.bytes.length) {
+      throw new Error('Patch target is outside the matched executable range');
+    }
+    result.actual = buffer.subarray(offset, offset + expected.bytes.length).toString('hex').match(/../g).join(' ').toUpperCase();
+    if (expected.fixed.some(i => buffer[offset + i] !== expected.bytes[i])) throw new Error('Patch target does not match expectedOriginal');
+    result.status = 'PASS';
+  } catch (error) {
+    result.reason = error.message;
+  }
+  return result;
+}
+
 export async function scanFile(path, platform, signatures) {
   const buffer = await readFile(path);
   const ranges = executableRanges(buffer, platform);
   const results = [];
   for (const signature of signatures) {
     const matches = findMatches(buffer, ranges, parsePattern(signature.pattern));
-    results.push({ key: signature.key, status: matches.length === 0 ? 'MISSING' : matches.length === 1 ? 'UNIQUE' : 'AMBIGUOUS', match_count: matches.length, matches });
+    const result = { key: signature.key, status: matches.length === 0 ? 'MISSING' : matches.length === 1 ? 'UNIQUE' : 'AMBIGUOUS', match_count: matches.length, matches };
+    if (signature.patch && result.status === 'UNIQUE') {
+      result.patch_check = checkPatch(buffer, ranges, matches[0], signature.patch);
+      if (result.patch_check.status === 'FAIL') result.status = 'PATCH_INVALID';
+    }
+    results.push(result);
   }
   return results;
 }

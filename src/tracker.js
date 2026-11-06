@@ -12,7 +12,7 @@ export const PROJECT_ROOT = fileURLToPath(new URL('../', import.meta.url));
 
 function projectStatus(project) {
   if (project.error || project.signatures.some(row => row.status === 'ERROR')) return 'ERROR';
-  if (project.signatures.some(row => ['MISSING', 'AMBIGUOUS'].includes(row.status))) return 'FAIL';
+  if (project.signatures.some(row => ['MISSING', 'AMBIGUOUS', 'PATCH_INVALID'].includes(row.status))) return 'FAIL';
   if (project.signatures.some(row => row.status === 'UNSUPPORTED')) return 'PARTIAL';
   return 'PASS';
 }
@@ -49,7 +49,8 @@ export async function runTracker(options = {}, dependencies = {}) {
       for (const entry of fetched.signatures) {
         for (const platform of PLATFORMS) {
           const pattern = entry.patterns[platform];
-          signatures.push({ name: entry.name, library: entry.library, platform, pattern, status: pattern ? 'NOT_SCANNED' : 'UNSUPPORTED', matches: [] });
+          const patch = entry.patches?.[platform];
+          signatures.push({ name: entry.name, library: entry.library, platform, pattern, ...(patch && { patch }), status: pattern ? 'NOT_SCANNED' : 'UNSUPPORTED', matches: [] });
         }
       }
       projects.push({ ...fetched, signatures });
@@ -65,7 +66,7 @@ export async function runTracker(options = {}, dependencies = {}) {
       binaries: prepared.binaries.map(({ path, ...binary }) => binary),
     })) : null;
   const previous = await readCache(join(reportdir, 'latest.json'));
-  if (input_key && previous?.input_key === input_key && previous.format_version === 3
+  if (input_key && previous?.input_key === input_key && previous.format_version === 4
       && ['PASS', 'FAIL', 'PARTIAL'].includes(previous.status) && Array.isArray(previous.projects)
       && previous.projects.length === projects.length
       && previous.projects.every((project, index) => Array.isArray(project.signatures) && project.signatures.length === projects[index].signatures.length)) {
@@ -86,7 +87,7 @@ export async function runTracker(options = {}, dependencies = {}) {
     try {
       if (!binary || binary.status !== 'READY') throw new Error(binary?.error ?? `No binary configuration for ${key}`);
       if (!input_key) throw new Error('Scan skipped: incomplete inputs');
-      const results = await scanFile(binary.path, binary.platform, rows.map((row, key) => ({ key, pattern: row.pattern })));
+      const results = await scanFile(binary.path, binary.platform, rows.map((row, key) => ({ key, pattern: row.pattern, patch: row.patch })));
       const checked_at = new Date().toISOString();
       for (const { key, ...result } of results) Object.assign(rows[key], result, { checked_at });
     } catch (error) {
@@ -98,7 +99,7 @@ export async function runTracker(options = {}, dependencies = {}) {
   const statuses = projects.map(project => project.status);
   const status = statuses.includes('ERROR') || prepared.binaries.some(binary => binary.status === 'ERROR') ? 'ERROR' : statuses.includes('FAIL') ? 'FAIL' : statuses.includes('PARTIAL') ? 'PARTIAL' : 'PASS';
   const report = {
-    format_version: 3, generated_at: new Date().toISOString(),
+    format_version: 4, generated_at: new Date().toISOString(),
     mode: options.binaryDir ? 'local' : 'steam', status, game: prepared.game,
     input_key: status === 'ERROR' ? null : input_key,
     binaries: prepared.binaries.map(({ path, ...binary }) => binary), projects,
