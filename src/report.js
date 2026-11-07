@@ -144,11 +144,11 @@ export function markdownProject(report, project) {
     }
     const patches = [group.linux, group.windows].filter(row => row?.patch);
     if (patches.length) {
-      lines.push('', '| Platform | patchOffset | expectedOriginal | Patch bytes | Actual bytes | Patch check |', '|---|---|---|---|---|---|');
+      lines.push('', '| Status | Platform | Offset | Expected | Patch | Actual |', '|---|---|---|---|---|---|');
       for (const row of patches) {
         const check = row.patch_check;
-        const status = check ? `${check.status}${check.reason ? `: ${check.reason}` : ''}` : 'NOT_CHECKED';
-        lines.push(`| ${row.platform === 'linux' ? 'Linux' : 'Windows'} | ${cell(row.patch.offset)} | \`${cell(row.patch.expectedOriginal)}\` | \`${cell(row.patch.bytes)}\` | ${check?.actual ? `\`${cell(check.actual)}\`` : '-'} | ${cell(status)} |`);
+        const status = check?.status === 'PASS' ? '✅' : check?.status === 'FAIL' ? '❌' : '-';
+        lines.push(`| ${status} | ${row.platform === 'linux' ? 'Linux' : 'Windows'} | ${cell(row.patch.offset)} | \`${cell(row.patch.expectedOriginal)}\` | \`${cell(row.patch.bytes)}\` | ${check?.actual ? `\`${cell(check.actual)}\`` : '-'} |`);
       }
     }
   }
