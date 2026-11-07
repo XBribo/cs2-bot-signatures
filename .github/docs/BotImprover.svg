@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="613" viewBox="0 0 900 613" role="img" aria-labelledby="title description">
 <title id="title">CS2 Bot Signatures Tracker</title>
-<desc id="description">Last updated: November 6, 2026 at 5:43:47 PM GMT. BotHider: Linux ✅, Windows ✅. BotController: Linux ✅, Windows ✅. BotVision: Linux ✅, Windows ✅. BotAI: Linux ❌, Windows ❌. BotState: Linux ✅, Windows ✅. BotAimImprover: Linux ✅, Windows ✅. BotRandomizer: Linux ✅, Windows ✅. NadeSystem: Linux ✅, Windows ✅. Counts: unique / total signatures.</desc>
+<desc id="description">Last updated: November 7, 2026 at 10:31:24 AM GMT. BotHider: Linux ✅, Windows ✅. BotController: Linux ✅, Windows ✅. BotVision: Linux ✅, Windows ✅. BotAI: Linux ❌, Windows ✅. BotState: Linux ✅, Windows ✅. BotAimImprover: Linux ✅, Windows ✅. BotRandomizer: Linux ✅, Windows ✅. NadeSystem: Linux ✅, Windows ✅. Counts: unique / total signatures.</desc>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:14px;fill:#1f2328}.meta{font-size:13px;fill:#59636e}.heading{font-weight:600}.link{fill:#0969da}</style>
 <rect width="900" height="613" fill="#ffffff"/>
 <text x="24" y="43" style="font-size:26px;font-weight:600">CS2 Bot Signatures Tracker</text>
 <path d="M24 59H876" stroke="#d1d9e0"/>
-<text class="meta" x="24" y="85"><tspan font-weight="700">Last updated:</tspan> November 6, 2026 at 5:43:47 PM GMT</text>
+<text class="meta" x="24" y="85"><tspan font-weight="700">Last updated:</tspan> November 7, 2026 at 10:31:24 AM GMT</text>
 <text class="meta" x="24" y="110"><tspan font-weight="700">Manifests:</tspan> <a href="https://steamdb.info/depot/2347771/history/?changeid=M:3019944380727688040"><tspan class="link">3019944380727688040</tspan></a>, <a href="https://steamdb.info/depot/2347773/history/?changeid=M:8513165868182791792"><tspan class="link">8513165868182791792</tspan></a></text>
 <rect x="24" y="143" width="852" height="42" fill="#f6f8fa"/>
 <text class="heading" x="44" y="169">Linux</text>
@@ -33,8 +33,8 @@
 <rect x="24" y="329" width="852" height="48" fill="#f6f8fa"/>
 <g transform="translate(44 344)"><circle cx="9" cy="9" r="9" fill="#cf222e"/><path d="m6 6 6 6m0-6-6 6" stroke="white" stroke-width="2"/></g>
 <text x="74" y="359">39 / 40</text>
-<g transform="translate(204 344)"><circle cx="9" cy="9" r="9" fill="#cf222e"/><path d="m6 6 6 6m0-6-6 6" stroke="white" stroke-width="2"/></g>
-<text x="234" y="359">39 / 40</text>
+<g transform="translate(204 344)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
+<text x="234" y="359">40 / 40</text>
 <text class="link" x="364" y="359">BotAI</text>
 <text class="link" x="674" y="359">View signatures →</text>
 <g transform="translate(44 392)"><rect width="18" height="18" rx="3" fill="#1a7f37"/><path d="m4 9 3 3 7-7" fill="none" stroke="white" stroke-width="2"/></g>
