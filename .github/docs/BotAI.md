@@ -1,6 +1,6 @@
 # BotAI
 
-- **Last updated:** November 7, 2026 at 12:05:48 PM GMT
+- **Last updated:** November 11, 2026 at 11:43:14 PM GMT
 - Repository: https://github.com/ed0ard/CS2-BotAI
 
 ## Sources
@@ -55,8 +55,8 @@
 
 | Status | Platform | Offset | Expected | Patch | Actual |
 |---|---|---|---|---|---|
-| ✅ | Linux | 22 | `E9 ? ? ? ?` | `C3 90 90 90 90` | `E9 7A 22 F6 FF` |
-| ✅ | Windows | 19 | `E9 ? ? ? ?` | `C3 90 90 90 90` | `E9 CB 42 F9 FF` |
+| ✅ | Linux | 22 | `E9 ? ? ? ?` | `C3 90 90 90 90` | `E9 9A 20 F6 FF` |
+| ✅ | Windows | 19 | `E9 ? ? ? ?` | `C3 90 90 90 90` | `E9 EB 44 F9 FF` |
 
 ### BotAI.EscapeFromBomb_OnUpdate_NoEquipKnife
 
@@ -67,8 +67,8 @@
 
 | Status | Platform | Offset | Expected | Patch | Actual |
 |---|---|---|---|---|---|
-| ✅ | Linux | 15 | `E8 ? ? ? ?` | `90 90 90 90 90` | `E8 D2 BB F6 FF` |
-| ✅ | Windows | 17 | `E8 ? ? ? ?` | `90 90 90 90 90` | `E8 A8 15 F9 FF` |
+| ✅ | Linux | 15 | `E8 ? ? ? ?` | `90 90 90 90 90` | `E8 F2 BA F6 FF` |
+| ✅ | Windows | 17 | `E8 ? ? ? ?` | `90 90 90 90 90` | `E8 C8 17 F9 FF` |
 
 ### BotAI.EscapeFromFlames_OnEnter_NoEquipKnife
 
@@ -79,8 +79,8 @@
 
 | Status | Platform | Offset | Expected | Patch | Actual |
 |---|---|---|---|---|---|
-| ✅ | Linux | 17 | `E8 ? ? ? ?` | `90 90 90 90 90` | `E8 98 21 F6 FF` |
-| ✅ | Windows | 17 | `E8 ? ? ? ?` | `90 90 90 90 90` | `E8 E5 41 F9 FF` |
+| ✅ | Linux | 17 | `E8 ? ? ? ?` | `90 90 90 90 90` | `E8 B8 1F F6 FF` |
+| ✅ | Windows | 17 | `E8 ? ? ? ?` | `90 90 90 90 90` | `E8 05 44 F9 FF` |
 
 ### BotAI.PlantBombLookAtPriorityLow
 
@@ -355,7 +355,7 @@
 
 | Status | Platform | Offset | Expected | Patch | Actual |
 |---|---|---|---|---|---|
-| ✅ | Linux | 17 | `E8 ? ? ? ?` | `0F 57 C0 90 90` | `E8 50 5E 08 00` |
+| ✅ | Linux | 17 | `E8 ? ? ? ?` | `0F 57 C0 90 90` | `E8 10 5F 08 00` |
 | ✅ | Windows | 28 | `E8 ? ? ? ?` | `0F 57 C0 90 90` | `E8 50 84 03 00` |
 
 ### BotAI.Upkeep_BotSIN_ZeroDrift
@@ -367,7 +367,7 @@
 
 | Status | Platform | Offset | Expected | Patch | Actual |
 |---|---|---|---|---|---|
-| ✅ | Linux | 13 | `E8 ? ? ? ?` | `0F 57 C0 90 90` | `E8 B5 5E 08 00` |
+| ✅ | Linux | 13 | `E8 ? ? ? ?` | `0F 57 C0 90 90` | `E8 75 5F 08 00` |
 | ✅ | Windows | 28 | `E8 ? ? ? ?` | `0F 57 C0 90 90` | `E8 63 84 03 00` |
 
 ### BotAI.InvestigateNoise_SkipSelfDefenseCheck
@@ -386,13 +386,13 @@
 
 | Status | Platform | Library | IDA-Style |
 |---|---|---|---|
-| ✅ | Linux | server | `48 8B BB 00 5E 00 00 E8 ? ? ? ? 4C 89 F7 E8 ? ? ? ?` |
-| ✅ | Windows | server | `48 8B 8E ? ? 00 00 E8 ? ? ? ? 48 8B CB E8 ? ? ? ? 4C 8B 05 ? ? ? ? 85 C0` |
+| ❌ patch | Linux | server | `48 8B BB 00 5E 00 00 E8 ? ? ? ? 4C 89 F7 E8 ? ? ? ?` |
+| ❌ patch | Windows | server | `48 8B 8E ? ? 00 00 E8 ? ? ? ? 48 8B CB E8 ? ? ? ? 4C 8B 05 ? ? ? ? 85 C0` |
 
 | Status | Platform | Offset | Expected | Patch | Actual |
 |---|---|---|---|---|---|
-| ✅ | Linux | 15 | `E8 EC B4 F6 FF` | `E8 FC B1 F6 FF` | `E8 EC B4 F6 FF` |
-| ✅ | Windows | 15 | `E8 20 51 F9 FF` | `E8 10 57 F9 FF` | `E8 20 51 F9 FF` |
+| ❌ | Linux | 15 | `E8 EC B4 F6 FF` | `E8 FC B1 F6 FF` | `E8 0C B4 F6 FF` |
+| ❌ | Windows | 15 | `E8 20 51 F9 FF` | `E8 10 57 F9 FF` | `E8 70 51 F9 FF` |
 
 ### BotAI.BombBeep_CT_GlobalHearRange
 
@@ -487,5 +487,5 @@
 
 | Status | Platform | Offset | Expected | Patch | Actual |
 |---|---|---|---|---|---|
-| ✅ | Linux | 35 | `E8 ? ? ? ? C6 83 ? ? 00 00 00` | `90 90 90 90 90 90 90 90 90 90 90 90` | `E8 E8 F8 FD FF C6 83 4C 5C 00 00 00` |
-| ✅ | Windows | 0 | `E8 ? ? ? ? 49 8B 06 C6 80 ? 5C 00 00 00` | `90 90 90 90 90 90 90 90 90 90 90 90 90 90 90` | `E8 7A A4 02 00 49 8B 06 C6 80 74 5C 00 00 00` |
+| ✅ | Linux | 35 | `E8 ? ? ? ? C6 83 ? ? 00 00 00` | `90 90 90 90 90 90 90 90 90 90 90 90` | `E8 68 F8 FD FF C6 83 4C 5C 00 00 00` |
+| ✅ | Windows | 0 | `E8 ? ? ? ? 49 8B 06 C6 80 ? 5C 00 00 00` | `90 90 90 90 90 90 90 90 90 90 90 90 90 90 90` | `E8 2A A2 02 00 49 8B 06 C6 80 74 5C 00 00 00` |
