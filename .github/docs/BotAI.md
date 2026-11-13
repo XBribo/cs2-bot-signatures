@@ -1,6 +1,6 @@
 # BotAI
 
-- **Last updated:** November 11, 2026 at 11:43:14 PM GMT
+- **Last updated:** November 13, 2026 at 10:53:18 PM GMT
 - Repository: https://github.com/ed0ard/CS2-BotAI
 
 ## Sources
@@ -386,13 +386,13 @@
 
 | Status | Platform | Library | IDA-Style |
 |---|---|---|---|
-| ❌ patch | Linux | server | `48 8B BB 00 5E 00 00 E8 ? ? ? ? 4C 89 F7 E8 ? ? ? ?` |
-| ❌ patch | Windows | server | `48 8B 8E ? ? 00 00 E8 ? ? ? ? 48 8B CB E8 ? ? ? ? 4C 8B 05 ? ? ? ? 85 C0` |
+| ✅ | Linux | server | `48 8B BB 00 5E 00 00 E8 ? ? ? ? 4C 89 F7 E8 ? ? ? ?` |
+| ✅ | Windows | server | `48 8B 8E ? ? 00 00 E8 ? ? ? ? 48 8B CB E8 ? ? ? ? 4C 8B 05 ? ? ? ? 85 C0` |
 
 | Status | Platform | Offset | Expected | Patch | Actual |
 |---|---|---|---|---|---|
-| ❌ | Linux | 15 | `E8 EC B4 F6 FF` | `E8 FC B1 F6 FF` | `E8 0C B4 F6 FF` |
-| ❌ | Windows | 15 | `E8 20 51 F9 FF` | `E8 10 57 F9 FF` | `E8 70 51 F9 FF` |
+| ✅ | Linux | 15 | `E8 0C B4 F6 FF` | `E8 1C B1 F6 FF` | `E8 0C B4 F6 FF` |
+| ✅ | Windows | 15 | `E8 70 51 F9 FF` | `E8 60 57 F9 FF` | `E8 70 51 F9 FF` |
 
 ### BotAI.BombBeep_CT_GlobalHearRange
 

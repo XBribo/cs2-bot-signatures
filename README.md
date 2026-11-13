@@ -1,6 +1,6 @@
 # CS2 Bot Signatures Tracker
 
-* **Last updated:** November 11, 2026 at 11:43:14 PM GMT
+* **Last updated:** November 13, 2026 at 10:53:18 PM GMT
 * **Manifests:** [5946971774180560324](https://steamdb.info/depot/2347771/history/?changeid=M:5946971774180560324), [3634295490837307276](https://steamdb.info/depot/2347773/history/?changeid=M:3634295490837307276)
 
 <table>
@@ -8,19 +8,9 @@
 <tr><td>✅</td><td>✅</td><td><a href="https://github.com/XBribo/CS2-Bot-Hider">BotHider</a></td><td><a href="https://github.com/XBribo/cs2-bot-signatures/blob/main/.github/docs/BotHider.md">View signatures →</a></td></tr>
 <tr><td>✅</td><td>✅</td><td><a href="https://github.com/XBribo/CS2-Bot-Controller">BotController</a></td><td><a href="https://github.com/XBribo/cs2-bot-signatures/blob/main/.github/docs/BotController.md">View signatures →</a></td></tr>
 <tr><td>✅</td><td>✅</td><td><a href="https://github.com/XBribo/CS2-Bot-Vision">BotVision</a></td><td><a href="https://github.com/XBribo/cs2-bot-signatures/blob/main/.github/docs/BotVision.md">View signatures →</a></td></tr>
-<tr><td>❌</td><td>❌</td><td><a href="https://github.com/ed0ard/CS2-BotAI">BotAI</a></td><td><a href="https://github.com/XBribo/cs2-bot-signatures/blob/main/.github/docs/BotAI.md">View signatures →</a></td></tr>
+<tr><td>✅</td><td>✅</td><td><a href="https://github.com/ed0ard/CS2-BotAI">BotAI</a></td><td><a href="https://github.com/XBribo/cs2-bot-signatures/blob/main/.github/docs/BotAI.md">View signatures →</a></td></tr>
 <tr><td>✅</td><td>✅</td><td><a href="https://github.com/ed0ard/CS2-Smarter-Bot">BotState</a></td><td><a href="https://github.com/XBribo/cs2-bot-signatures/blob/main/.github/docs/BotState.md">View signatures →</a></td></tr>
 <tr><td>✅</td><td>✅</td><td><a href="https://github.com/ed0ard/CS2-Bullseye-Bot">BotAimImprover</a></td><td><a href="https://github.com/XBribo/cs2-bot-signatures/blob/main/.github/docs/BotAimImprover.md">View signatures →</a></td></tr>
 <tr><td>✅</td><td>✅</td><td><a href="https://github.com/ed0ard/CS2-Bot-Randomizer">BotRandomizer</a></td><td><a href="https://github.com/XBribo/cs2-bot-signatures/blob/main/.github/docs/BotRandomizer.md">View signatures →</a></td></tr>
 <tr><td>✅</td><td>✅</td><td><a href="https://github.com/ed0ard/CS2-Bot-NadeSystem">NadeSystem</a></td><td><a href="https://github.com/XBribo/cs2-bot-signatures/blob/main/.github/docs/NadeSystem.md">View signatures →</a></td></tr>
 </table>
-
-<details>
-<summary>BotAI broken signatures</summary>
-
-<table>
-<tr><th>Linux</th><th>Windows</th><th>Function</th></tr>
-<tr><td>❌ patch</td><td>❌ patch</td><td>BotAI.TBot_BombsiteSearch_UseKnownPlantedSite</td></tr>
-</table>
-
-</details>
