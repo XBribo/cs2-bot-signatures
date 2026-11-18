@@ -1,6 +1,6 @@
 # BotState
 
-- **Last updated:** November 17, 2026 at 6:34:09 PM GMT
+- **Last updated:** November 18, 2026 at 1:20:06 AM GMT
 - Repository: https://github.com/ed0ard/CS2-Smarter-Bot
 
 ## Sources
