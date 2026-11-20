@@ -1,6 +1,6 @@
 # BotAI
 
-- **Last updated:** November 19, 2026 at 5:22:30 PM GMT
+- **Last updated:** November 20, 2026 at 7:12:54 AM GMT
 - Repository: https://github.com/ed0ard/CS2-BotAI
 
 ## Sources
@@ -91,8 +91,8 @@
 
 | Status | Platform | Offset | Expected | Patch | Actual |
 |---|---|---|---|---|---|
-| ✅ | Linux | 0 | `66 0F EF C9 F3 0F 10 45 CC F3 0F 2A C8 F3 0F 5E C1 F3 0F 10 0D ? ? ? ?` | `F3 0F 10 45 CC F3 0F 2A C8 F3 0F 5E C1 B8 CD CC 4C 3E 66 0F 6E C8 0F 1F 00` | `66 0F EF C9 F3 0F 10 45 CC F3 0F 2A C8 F3 0F 5E C1 F3 0F 10 0D BC 43 CA FF` |
-| ✅ | Windows | 0 | `66 0F 6E C0 0F 5B C0 F3 0F 5E F0 F3 0F 10 05 ? ? ? ?` | `F3 0F 2A C0 F3 0F 5E F0 B8 CD CC 4C 3E 66 0F 6E C0 66 90` | `66 0F 6E C0 0F 5B C0 F3 0F 5E F0 F3 0F 10 05 63 6A 4C 01` |
+| ✅ | Linux | 0 | `66 0F EF C9 F3 0F 10 45 CC F3 0F 2A C8 F3 0F 5E C1 F3 0F 10 0D ? ? ? ?` | `F3 0F 10 45 CC F3 0F 2A C8 F3 0F 5E C1 B8 CD CC 4C 3E 66 0F 6E C8 0F 1F 00` | `66 0F EF C9 F3 0F 10 45 CC F3 0F 2A C8 F3 0F 5E C1 F3 0F 10 0D 7C 42 CA FF` |
+| ✅ | Windows | 0 | `66 0F 6E C0 0F 5B C0 F3 0F 5E F0 F3 0F 10 05 ? ? ? ?` | `F3 0F 2A C0 F3 0F 5E F0 B8 CD CC 4C 3E 66 0F 6E C0 66 90` | `66 0F 6E C0 0F 5B C0 F3 0F 5E F0 F3 0F 10 05 33 6A 4C 01` |
 
 ### BotAI.PlantBombLookAtPriorityLow
 
